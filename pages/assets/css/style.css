@@ -1,0 +1,107 @@
+body {
+    background-color: #ffffff;
+}
+
+.text-teebb {
+    color: #2d6ce0;
+}
+
+.text-gray {
+    color: #aaaaaa;
+}
+
+.bg-teebb {
+    background: #2d6ce0!important;
+}
+
+.bg-linear-teebb {
+    position: relative;
+    background: linear-gradient(194.34deg, #11367b 22.16%, #2d6ce0 96.06%);
+}
+
+a.text-muted:hover, a.text-white-50:hover, a.text-white:hover, a.text-dark:hover, a.text-black:hover {
+    color: #2d6ce0!important;
+    text-decoration: none;
+}
+
+a.teebb-bg.text-white-50:hover {
+    color: #444444!important;
+}
+
+.common-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.common-banner .bg-svg {
+    position: absolute;
+    z-index: -1;
+    background: #2d6ce0;
+    top: 0%;
+    left: -30%;
+}
+
+.banner-title {
+    font-size: 3rem;
+}
+
+.normal-title {
+    font-size: 2.5rem;
+}
+
+.second-title {
+    font-size: 2rem;
+}
+
+.img-gray {
+    opacity: 0.7;
+    filter: grayscale(1);
+}
+
+.img-gray:hover {
+    opacity: unset;
+    filter: none;
+}
+
+.course-card img {
+    transform: scale(1);
+    transition: all 1s ease 0s;
+    -webkit-transform: scale(1);
+    -webkit-transform: all 1s ease 0s;
+}
+
+.course-card:hover img {
+    transform: scale(1.3);
+    transition: all 1s ease 0s;
+    -webkit-transform: scale(1.3);
+    -webkit-transform: all 1s ease 0s;
+}
+
+.small-line-height {
+    line-height: 18px;
+}
+
+.border-bottom-dashed {
+    border-bottom: 1px #dedede dashed;
+}
+
+.video-tag {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.course-play-list .active .title::before {
+    content: url(../images/play.svg);
+    margin-top: 0.2rem;
+    margin-right: 0.5em;
+}
+
+@media (max-width: 768px) {
+    /* 手机屏幕时，不显示dropdown菜单箭头 */
+    .dropdown-menu-arrow::before {
+        display: none;
+    }
+}

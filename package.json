@@ -1,0 +1,32 @@
+{
+    "title": "Teebb",
+    "name": "teebb-com",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "node_modules/.bin/gulp watch"
+    },
+    "description": "Teebb.com website base on tabler",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "http://www.teebb.com",
+    "license": "MIT",
+    "author": "teebbstudios",
+    "contributors": [
+        "Quan Weiwei <qww.zone@aliyun.com>"
+    ],
+    "dependencies": {
+        "@tabler/core": "1.0.0-alpha.15"
+    },
+    "devDependencies": {
+        "browser-sync": "2.26.13",
+        "del": "6.0.0",
+        "gulp": "4.0.2",
+        "merge-stream": "2.0.0"
+    }
+}
