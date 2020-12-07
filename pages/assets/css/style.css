@@ -107,6 +107,15 @@ a.teebb-bg.text-white-50:hover {
     margin-right: 0.5em;
 }
 
+.contact-button,
+.close-info {
+    cursor: pointer;
+}
+
+.vertical-write {
+    writing-mode: vertical-lr;
+}
+
 @media (max-width: 768px) {
 
     /* 手机屏幕时，不显示dropdown菜单箭头 */

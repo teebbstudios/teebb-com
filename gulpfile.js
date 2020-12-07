@@ -30,12 +30,17 @@ function clean() {
 
 // Bring third party dependencies from node_modules into vendor directory
 function modules() {
+  // jquery
+  var jquery = gulp.src([
+      './node_modules/jquery/dist/**/*'
+    ])
+    .pipe(gulp.dest('./pages/vendor/jquery'));
   // tabler
   var tabler = gulp.src([
       './node_modules/@tabler/core/dist/**/*'
     ])
     .pipe(gulp.dest('./pages/vendor/tabler'));
-  return merge(tabler);
+  return merge(jquery, tabler);
 }
 
 // Watch files
