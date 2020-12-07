@@ -11,7 +11,11 @@ body {
 }
 
 .bg-teebb {
-    background: #2d6ce0!important;
+    background: #2d6ce0 !important;
+}
+
+.bg-black {
+    background: #000000 !important;
 }
 
 .bg-linear-teebb {
@@ -19,13 +23,17 @@ body {
     background: linear-gradient(194.34deg, #11367b 22.16%, #2d6ce0 96.06%);
 }
 
-a.text-muted:hover, a.text-white-50:hover, a.text-white:hover, a.text-dark:hover, a.text-black:hover {
-    color: #2d6ce0!important;
+a.text-muted:hover,
+a.text-white-50:hover,
+a.text-white:hover,
+a.text-dark:hover,
+a.text-black:hover {
+    color: #2d6ce0 !important;
     text-decoration: none;
 }
 
 a.teebb-bg.text-white-50:hover {
-    color: #444444!important;
+    color: #444444 !important;
 }
 
 .common-banner {
@@ -100,6 +108,7 @@ a.teebb-bg.text-white-50:hover {
 }
 
 @media (max-width: 768px) {
+
     /* 手机屏幕时，不显示dropdown菜单箭头 */
     .dropdown-menu-arrow::before {
         display: none;
