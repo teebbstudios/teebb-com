@@ -20,7 +20,7 @@ body {
 
 .bg-linear-teebb {
     position: relative;
-    background: linear-gradient(194.34deg, #11367b 22.16%, #2d6ce0 96.06%);
+    background: linear-gradient(194.34deg, #2551a4 22.16%, #2d6ce0 96.06%);
 }
 
 a.text-muted:hover,
@@ -46,7 +46,8 @@ a.teebb-bg.text-white-50:hover {
     z-index: -1;
     background: #2d6ce0;
     top: 0%;
-    left: -30%;
+    left: 50%;
+    transform: translateY(0%) translateX(-50%);
 }
 
 .banner-title {
@@ -74,15 +75,11 @@ a.teebb-bg.text-white-50:hover {
 .course-card img {
     transform: scale(1);
     transition: all 1s ease 0s;
-    -webkit-transform: scale(1);
-    -webkit-transform: all 1s ease 0s;
 }
 
 .course-card:hover img {
     transform: scale(1.3);
     transition: all 1s ease 0s;
-    -webkit-transform: scale(1.3);
-    -webkit-transform: all 1s ease 0s;
 }
 
 .small-line-height {
@@ -114,6 +111,28 @@ a.teebb-bg.text-white-50:hover {
 
 .vertical-write {
     writing-mode: vertical-lr;
+}
+
+.video-js .vjs-big-play-button {
+    top: 50%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.page-item {
+    margin-right: 10px;
 }
 
 @media (max-width: 768px) {
